@@ -6,7 +6,7 @@ import updateTaskText from './adddelupd.js';
 let localStorageMock = {};
 global.localStorage = {
   getItem: (key) => localStorageMock[key],
-  setItem: (key, value) => (localStorageMock[key] = value),
+  setItem: (key, value) => localStorageMock[key] = value,
 };
 
 // Mock the DOM manipulation
