@@ -151,6 +151,12 @@ To run tests, run the following command:
 - Twitter: [@mwovi_peter](https://twitter.com/mwovi_peter)
 - LinkedIn: [@peter-mwovi](https://www.linkedin.com/in/peter-mwovi-57141a179/)
 
+👤 **Ghaus Ali Khan**
+
+- GitHub: [@githubhandle](https://github.com/GhausAliKhan)
+- Twitter: [@twitterhandle](https://twitter.com/GhausKhann)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ghaus-ali-khan-2a48aa256/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
