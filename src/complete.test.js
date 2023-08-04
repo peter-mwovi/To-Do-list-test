@@ -11,6 +11,7 @@ global.localStorage = {
 
 // Mock the DOM manipulation
 const jsdom = require('jsdom');
+
 const { JSDOM } = jsdom;
 
 const setupDOM = () => {
