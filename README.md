@@ -67,7 +67,7 @@ Clone this repository to your desired folder by running the following commands i
 ```sh
   cd your-prefered-folder-name
   
-  git clone https://github.com/jcmunav63/to_do_list.git
+  git clone https://github.com/peter-mwovi/To-Do-list-test.git
 ```
 
 ### Prerequisites <a name="prerequisites"></a>
@@ -150,7 +150,6 @@ To run tests, run the following command:
 - GitHub: [@peter-mwovvi](https://github.com/peter-mwovi/)
 - Twitter: [@mwovi_peter](https://twitter.com/mwovi_peter)
 - LinkedIn: [@peter-mwovi](https://www.linkedin.com/in/peter-mwovi-57141a179/)
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
