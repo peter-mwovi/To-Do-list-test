@@ -145,6 +145,10 @@ p {
   text-decoration: line-through;
 }
 
+.complete {
+  background-color: crimson;
+}
+
 #erase-all {
   border: none;
   background-color: #f1f1f1;

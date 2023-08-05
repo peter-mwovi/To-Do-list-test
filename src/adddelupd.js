@@ -1,16 +1,11 @@
+import { arrangeIndexes } from './completed.js';
+
 function createTaskElement(taskName, tasksLocal) {
   const index = tasksLocal.length + 1;
   const complete = false;
   const taskString = { index, name: taskName, completed: complete };
   tasksLocal.push(taskString);
   localStorage.setItem('tasks', JSON.stringify(tasksLocal));
-}
-
-function arrangeIndexes(tasksLocal) {
-  for (let i = 0; i < tasksLocal.length; i += 1) {
-    tasksLocal[i].index = (i + 1);
-  }
-  return tasksLocal;
 }
 
 function deleteTaskElement(tasksLocal, delBtn) {
@@ -22,9 +17,4 @@ function deleteTaskElement(tasksLocal, delBtn) {
   return tasksLocal;
 }
 
-function updateTaskText(value, index, tasksLocal) {
-  tasksLocal[index - 1].name = value;
-  localStorage.setItem('tasks', JSON.stringify(tasksLocal));
-}
-
-export { createTaskElement, deleteTaskElement, updateTaskText };
+export { createTaskElement, deleteTaskElement };

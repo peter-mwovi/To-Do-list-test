@@ -1,4 +1,3 @@
-// Import the functions to be tested
 import { createTaskElement, deleteTaskElement } from './adddelupd.js';
 
 // Mock the localStorage service

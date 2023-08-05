@@ -1,8 +1,8 @@
 import './style.css';
 
-import { createTaskElement, deleteTaskElement, updateTaskText } from './adddelupd.js';
+import { createTaskElement, deleteTaskElement } from './adddelupd.js';
 
-import { updateTaskStatus, deleteCompletedTasks } from './completed.js';
+import { updateTaskStatus, deleteCompletedTasks, updateTaskText } from './completed.js';
 
 let tasksLocal = [];
 
@@ -116,19 +116,9 @@ function activateTaskInputListeners() {
 
 function activateCompletedListener() {
   const deleteCompleted = document.getElementById('erase-all');
-  const taskList = document.getElementById('task-list');
   deleteCompleted.addEventListener('click', () => {
     deleteCompletedTasks(tasksLocal);
-    loadTasksFromLocalStorage();
-    taskList.innerHTML = '';
-
-    if (tasksLocal.length > 0) {
-      tasksLocal.forEach((task) => {
-        const taskElement = displayTaskElement(task);
-        taskList.appendChild(taskElement);
-      });
-      window.location.reload();
-    }
+    window.location.reload();
   });
 }
 
@@ -162,6 +152,7 @@ document.getElementById('add-task-btn').addEventListener('click', () => {
 window.onload = () => {
   loadTasksFromLocalStorage();
   const taskList = document.getElementById('task-list');
+  taskList.innerHTML = '';
   if (tasksLocal.length > 0) {
     tasksLocal.forEach((task) => {
       const taskElement = displayTaskElement(task);
